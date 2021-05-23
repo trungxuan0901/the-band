@@ -1,0 +1,301 @@
+/* reset css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+}
+
+/* commom */
+
+#header {
+  height: 46px;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#nav {
+  display: inline-block;
+}
+#nav,
+.subnav {
+  list-style: none;
+}
+#nav > li {
+  display: inline-block;
+}
+
+#nav li {
+  position: relative;
+}
+
+#nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#nav li a {
+  text-decoration: none;
+  line-height: 46px;
+  padding: 0 24px;
+  display: block;
+}
+
+#nav li:hover .subnav {
+  display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav > li:hover > a {
+  color: #000;
+  background-color: #ccc;
+}
+
+#nav .subnav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a {
+  color: #000;
+  padding: 0 16px;
+  line-height: 38px;
+}
+
+#nav .nav-arrow-down {
+  font-size: 12px;
+}
+#header .search-button {
+  float: right;
+  padding: 0 21px;
+}
+#header .search-icon {
+  color: #fff;
+  font-size: 20px;
+  line-height: 46px;
+}
+
+#header .search-button:hover {
+  background-color: #f44336;
+  cursor: pointer;
+}
+
+#slider {
+  position: relative;
+  margin-top: 46px;
+  padding-top: 50%; /*chiều cao bằng 50% độ dài của chiều ngang*/
+  background: url("./img/slider1.jpg") top center/ cover no-repeat;
+}
+#slider .text-content {
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  bottom: 48px;
+  text-align: center;
+}
+#slider .text-heading {
+  font-weight: 500;
+  font-size: 25px;
+}
+#slider .text-description {
+  font: size 14px;
+  margin-top: 25px;
+}
+
+#content {
+}
+#content .content-section {
+  width: 800px;
+  padding: 64px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#content .section-heading {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+#content .section-sub-heading {
+  text-align: center;
+  font-style: italic;
+  opacity: 0.6;
+  margin-top: 25px;
+}
+
+#content .about-text {
+  margin-top: 25px;
+  font-size: 15px;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+#content .list-member {
+  margin-top: 48px;
+  text-align: center;
+  display: flex;
+}
+
+#content .list-item {
+  width: calc(100% / 3);
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
+#content .list-name {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+#content .list-member .list-avatar {
+  border-radius: 5px;
+  margin-top: 15px;
+  width: 152px;
+}
+.tour-section {
+  margin-top: 64px;
+  background-color: #000;
+  color: #fff;
+}
+
+.ticket-list {
+  background-color: #fff;
+  margin-top: 40px;
+  color: #000;
+}
+
+.ticket-list li {
+  font-size: 15px;
+  padding: 11px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.ticket-list .sold-out {
+  background-color: #f44336;
+  color: #fff;
+  margin-left: 16px;
+  padding: 3px 4px;
+}
+
+.ticket-list .quantity {
+  background-color: #000;
+  width: 24px;
+  height: 24px;
+  color: #fff;
+  float: right;
+  border-radius: 50%;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+  line-height: 24px;
+}
+
+.place-list {
+  color: #000;
+  display: flex;
+  margin: 32px 222px;
+}
+
+.place-item {
+  padding: 0 8px;
+  width: calc(100% / 3);
+  margin-bottom: 64px;
+}
+
+.place-img {
+  width: 100%;
+}
+
+.place-img:hover {
+  opacity: 0.6;
+}
+
+.place-body {
+  background-color: #fff;
+  padding: 16px;
+  font-size: 15px;
+}
+
+.place-heading {
+  font-size: 15px;
+}
+
+.place-time {
+  margin-top: 15px;
+  color: #757575;
+}
+
+.place-desc {
+  margin-top: 15px;
+  line-height: 1.4;
+}
+
+.place-by-btn {
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  padding: 11px 16px;
+  display: inline-block;
+  margin-top: 16px;
+}
+
+.place-by-btn:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+.address-sub {
+  margin-top: 40px;
+  display: flex;
+}
+
+.address-sub .address {
+  width: 50%;
+}
+
+.address-sub .sub {
+  width: 50%;
+}
+.address-sub .sub input {
+  height: 30px;
+}
+.input-1 {
+  margin-bottom: 5px;
+}
+.input-1 input {
+  border: 1px solid #ccc;
+  padding-left: 5px;
+}
+
+#input-message input {
+  margin-bottom: 5px;
+  width: 83%;
+  border: 1px solid #ccc;
+  padding-left: 5px;
+}
+
+.btn-submit {
+  border: 1px solid #ccc;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+}
+
+#footer {
+  text-align: center;
+}
